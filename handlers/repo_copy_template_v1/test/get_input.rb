@@ -1,62 +1,11 @@
 {
   'info' => {
-    'ssh_key' => "-----BEGIN RSA PRIVATE KEY-----
-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
------END RSA PRIVATE KEY-----
-
-"
+    'git_username' => "FooBar",
+    'git_password' => ""
   },
   'parameters' => {
     'error_handling' => 'Error Message',
-    'source_repository' => 'git@github.com:ChadRehmKineticData/template.git',
-    'destination_repository' => 'git@github.com:ChadRehmKineticData/template-2.git',
+    'source_repository' => 'https://github.com/ChadRehmKineticData/template.git',
+    'destination_repository' => 'https://github.com/ChadRehmKineticData/template-2.git',
   }
 }
