@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskDefinition id="repo_copy_template" name="Kinetic Core API v1" schema_version="1.0" version="1">
+  <author>support@kineticdata.com</author>
+  <description>This handler clones from the source repository and pushs to the destination repository.</description>
+  <helpurl></helpurl>
+  <visible>false</visible>
+  <deferrable>false</deferrable>
+  <parameters>
+    <parameter id="error_handling" label="Error Handling" required="true" tooltip="Determine what to return if an error is encountered." menu="Error Message,Raise Error">Error Message</parameter>
+    <parameter id="source_repository" label="Source Repository" required="true" tooltip="ssh url for the repository to clone."></parameter>
+    <parameter id="destination_repository" label="Destination Repository" required="true" tooltip="ssh url for the repository to push to."></parameter>
+  </parameters>
+
+  <handler name="repo_copy_template" version="1">
+    <infos>
+      <info name="ssh_key">&lt;%= @info['ssh_key'] %&gt;</info>
+    </infos>
+    <parameters>
+      <parameter name="error_handling">&lt;%= @parameters["error_handling"] %&gt;</parameter>
+      <parameter name="source_repository">&lt;%= @parameters["source_repository"] %&gt;</parameter>
+      <parameter name="destination_repository">&lt;%= @parameters["destination_repository"] %&gt;</parameter>
+    </parameters>
+  </handler>
+  <results format="xml">
+    <result name="Handler Error Message"/>
+  </results>
+</taskDefinition>
