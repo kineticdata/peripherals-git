@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <taskInfo version="1.0">
-  <info name="git_username" required="true" description="The username for the git hosting service"></info>
-  <info name="git_password" required="true" description="The password for the git hosting service" type="encrypted"></info>
+  <info name="git_username" required="true" description="The username for the git hosting service" type="encrypted"></info>
+  <info name="git_password" description="The password for the git hosting service" type="encrypted"></info>
   <info name="enable_debug_logging" description="True or False">false</info>
 </taskInfo>

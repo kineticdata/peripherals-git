@@ -14,3 +14,4 @@
 
 ### Notes
   * It is assumed that the user has rights to both the source and destination urls.
+  * To support GitHubs Personal Access Token (PAT) authentication the username has is encrypted and the password is optional.  To authenticate to Github for repo push/pull place the PAT into the username field and leave the password field blank.
